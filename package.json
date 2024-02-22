@@ -1,5 +1,6 @@
 {
   "name": "mailerms",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "config.js",
@@ -8,5 +9,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@cloudamqp/amqp-client": "^3.1.1",
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.9",
+    "nodemon": "^3.0.3"
+  }
 }

@@ -1,12 +1,12 @@
-module.exports = {
+export default {
     rabbitMQ: {
-      url: "amqp://localhost",
-      exchangeName: "mailExchange",
+      url: process.env.CLOUDAQMP_URL,
+      exchangeName: "email",
     },
   
     mail: {
       user: 'stormerselite@gmail.com',
-      pass: '', 
+      pass: 'gpeh qsjm ifkj vfys', 
       from: 'BookMyEvent <youremail@gmail.com>'
     },
   
