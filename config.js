@@ -6,7 +6,7 @@ export default {
   
     mail: {
       user: 'stormerselite@gmail.com',
-      pass: 'gpeh qsjm ifkj vfys', 
+      pass: 's', 
       from: 'BookMyEvent <youremail@gmail.com>'
     },
   
