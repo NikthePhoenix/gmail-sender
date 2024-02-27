@@ -23,7 +23,7 @@ async function startConsumer() {
 
   console.log("[✅] Connection over channel established")
 
-  const q = await channel.queue('otp')
+  const q = await channel.queue('email.otp')
 
   let counter = 0;
 
@@ -31,13 +31,13 @@ async function startConsumer() {
     try {
       console.log(`[📤] Message received (${++counter})`, msg.bodyToString())
       //const message = JSON.parse(msg.bodyToString());
-      console.log(msg.email);
+      // console.log(message.email);
 
       
         const data = JSON.parse(msg.bodyToString());
         const subject= data.subject
         const body = data.body
-        const to = data.to
+        const to = data.email
         //channel.ack(msg);
     
         const from = config.mail.from;
