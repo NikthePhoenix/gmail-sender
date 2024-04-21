@@ -31,7 +31,7 @@ async function startConsumer() {
     try {
       console.log(`[📤] Message received (${++counter})`, msg.bodyToString())
       //const message = JSON.parse(msg.bodyToString());
-      console.log(msg.email);
+      // console.log(message.email);
 
       
         const data = JSON.parse(msg.bodyToString());
